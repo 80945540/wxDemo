@@ -1,0 +1,32 @@
+.book-info-layout{
+    margin-bottom: 5px;
+    background: #ffffff;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.book-context-layout{
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.book-button-layout{
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+}
+.book-info-image{
+    width: 80px;
+    height: 110px;
+}
+.book-info{
+    margin-left: 10px;
+}
+.book-button{
+    width: 100%;
+    height: auto;
+    color: #999999;
+    background: #999999;
+}

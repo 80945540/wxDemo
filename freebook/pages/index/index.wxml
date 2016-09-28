@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<block wx:if="{{showLoading}}">
+  <view class="page-loading">
+    <text class="weui-loading"/><text class="loading-text">玩命加载中</text>
+  </view>
+</block>
+<block wx:else>
+  <scroll-view style="height:100%;" scroll-y="true" class="index" >
+      <swiper indicator-dots="true" autoplay="true" interval="3000" duration="500" class="swiper">
+              <block wx:for="{{banners}}" wx:for-item="item">
+              <swiper-item bindtap="swiperOnClik" data-url="{{item.Url}}" data-title="{{item.bannerTitle}}">
+                <image src="{{item.imageUrl}}" class="slide-image"/>
+              </swiper-item>
+            </block>
+      </swiper>
+      <view class="view_layout">
+          <text class="layout-text">热门推荐</text>
+          <view class="view_line"/>
+          <block wx:for="{{booksHot}}" wx:for-item="item">
+              <view class="book-item" bindtap="swiperOnClik" data-url="{{item.codeId}}" data-title="{{item.bookName}}">
+                  <view class="book-image">
+                    <image src="{{item.imageUrl}}" class="img-image"></image>
+                  </view>
+                  <view class="book-info">
+                      <view>
+                          <text class="book-text-title">{{item.bookName}}</text>
+                      </view>
+                      <view>
+                          <text class="book-text-author">{{item.author}}</text>
+                      </view>
+                      <view>
+                          <text class="book-text-context">{{item.introduction}}</text>
+                      </view>
+                  </view>
+              </view>
+          </block>
+      </view>
+      <view class="view_layout">
+          <text class="layout-text">最新推荐</text>
+          <view class="view_line"/>
+          <block wx:for="{{booksNew}}" wx:for-item="item">
+              <view class="book-item" bindtap="swiperOnClik" data-url="{{item.codeId}}" data-title="{{item.bookName}}">
+                  <view class="book-image">
+                      <image src="{{item.imageUrl}}" class="img-image"></image>
+                  </view>
+                  <view class="book-info">
+                      <view>
+                          <text class="book-text-title">{{item.bookName}}</text>
+                      </view>
+                      <view>
+                          <text class="book-text-author">{{item.author}}</text>
+                      </view>
+                      <view>
+                          <text class="book-text-context">{{item.introduction}}</text>
+                      </view>
+                  </view>
+              </view>
+          </block>
+      </view>
+  </scroll-view>
+</block>

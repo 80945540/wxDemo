@@ -1,0 +1,23 @@
+/**index.wxss**/
+.loading-text{
+    margin-left: 10px;
+    font-size: 14px;
+}
+.slide-image{
+    display: block;
+    height: 180px;
+    width: 100%;
+}
+.swiper{
+    height: 180px;
+}
+.view_layout{
+    background-color: #ffffff;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    flex: 1;
+    font-size: 15px;
+    padding: 10px;
+}
+.layout-text{
+    margin-bottom: 5px;
+}

@@ -1,0 +1,55 @@
+<block wx:if="{{showLoading}}">
+  <view class="page-loading">
+    <text class="weui-loading"/><text class="loading-text">玩命加载中</text>
+  </view>
+</block>
+<block wx:else>
+  <scroll-view style="height:100%;" scroll-y="true" class="index" >
+    <view >
+      <view class="book-info-layout">
+        <view >
+          <image src="http://img.txt99.cc/Cover/38/38911.jpg" class="book-info-image"></image>
+        </view>
+        <view class="book-info">
+          <view>
+            <text class="book-text-title">买一送一:嫁给亿万首席</text>
+          </view>
+          <view>
+            <text class="book-text-author">作者:凉尘</text>
+          </view>
+          <view>
+            <text class="book-text-author">分类:现代都市</text>
+          </view>
+          <view>
+            <text class="book-text-author">字数:212927837字</text>
+          </view>
+          <view>
+            <text class="book-text-author">进度:已完结</text>
+          </view>
+          <view>
+            <text class="book-text-author">更新:2016-04-14 09:59</text>
+          </view>
+        </view>
+      </view>
+      <view class="book-button-layout">
+          <button bindtap="reading" type="default" plain="true" class="book-button">在线阅读</button>
+          <view style="width: 20px"></view>
+          <button bindtap="download" type="primary" plain="true" class="book-button">TXT下载</button>
+      </view>
+      <view class="book-context-layout">
+        <text class="layout-text">作品简介:</text>
+        <view class="view_line"/>
+        <text class="book-text-context">他带着三百名亲信返程，却被奇门阵法困在一处深山老林，七天七夜走不出去，身边的人不停死亡，人心惶惶。一个骑着骡子的少女，闯入阵中，轻松将阵法破除，救了他和他下属的性命。他望着少女娇嫩的脸，懊恼的说：“怎么我的姻缘来得这样早？她看上去不满十五岁，要娶她还得等几年啊。”“您都二十五了，这会子才开窍，特么的这姻缘到底哪里早了？”总之就是一个古代大龄将军，自以为是因为保家卫国耽误了姻缘，其实是情志晚开。偶遇某个擅长玄学的少女，从此就一发不可收拾，一根筋走上了追妻、宠妻的忠犬之路。他带着三百名亲信返程，却被奇门阵法困在一处深山老林，七天七夜走不出去，身边的人不停死亡，人心惶惶。一个骑着骡子的少女，闯入阵中，轻松将阵法破除，救了他和他下属的性命。他望着少女娇嫩的脸，懊恼的说：“怎么我的姻缘来得这样早？她看上去不满十五岁，要娶她还得等几年啊。”“您都二十五了，这会子才开窍，特么的这姻缘到底哪里早了？”总之就是一个古代大龄将军，自以为是因为保家卫国耽误了姻缘，其实是情志晚开。偶遇某个擅长玄学的少女，从此就一发不可收拾，一根筋走上了追妻、宠妻的忠犬之路。他带着三百名亲信返程，却被奇门阵法困在一处深山老林，七天七夜走不出去，身边的人不停死亡，人心惶惶。一个骑着骡子的少女，闯入阵中，轻松将阵法破除，救了他和他下属的性命。他望着少女娇嫩的脸，懊恼的说：“怎么我的姻缘来得这样早？她看上去不满十五岁，要娶她还得等几年啊。”“您都二十五了，这会子才开窍，特么的这姻缘到底哪里早了？”总之就是一个古代大龄将军，自以为是因为保家卫国耽误了姻缘，其实是情志晚开。偶遇某个擅长玄学的少女，从此就一发不可收拾，一根筋走上了追妻、宠妻的忠犬之路。他带着三百名亲信返程，却被奇门阵法困在一处深山老林，七天七夜走不出去，身边的人不停死亡，人心惶惶。一个骑着骡子的少女，闯入阵中，轻松将阵法破除，救了他和他下属的性命。他望着少女娇嫩的脸，懊恼的说：“怎么我的姻缘来得这样早？她看上去不满十五岁，要娶她还得等几年啊。”“您都二十五了，这会子才开窍，特么的这姻缘到底哪里早了？”总之就是一个古代大龄将军，自以为是因为保家卫国耽误了姻缘，其实是情志晚开。偶遇某个擅长玄学的少女，从此就一发不可收拾，一根筋走上了追妻、宠妻的忠犬之路。</text>
+      </view>
+    </view>
+  </scroll-view>
+</block>
+<modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange">
+  <view> 在线阅读暂时不开放 </view>
+</modal>
+<toast hidden="{{toastSuccess}}" bindchange="toastChange">
+  下载成功
+</toast>
+<toast hidden="{{toastSuccess}}" bindchange="toastChange">
+  已添加任务
+</toast>
